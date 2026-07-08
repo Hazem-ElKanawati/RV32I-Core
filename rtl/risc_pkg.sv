@@ -130,7 +130,19 @@ package risc_pkg;
   // --------------------------------------------------------
   // Control Signal Struct
   // --------------------------------------------------------
- 
+  typedef struct packed
+  {
+    logic mem_valid;
+    logic mem_write;
+    mem_size_t mem_size;
+    logic load_zero_extend;
+    logic rf_write_enable;
+    logic pc_src_select;
+    logic alu_src_a_select;
+    logic alu_src_b_select;
+    wb_src_t wb_src;
+    alu_op_t alu_op;
+  } control_t;
  
  
  
