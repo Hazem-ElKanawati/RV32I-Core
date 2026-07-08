@@ -41,7 +41,11 @@ package risc_pkg;
   // Memory Access Sizes
   // --------------------------------------------------------
 
-  
+   typedef enum logic [1:0] {
+    BYTE = 2'b00,
+    HALF_WORD = 2'b01,
+    WORD = 2'b11
+   } mem_size_t ;
   
   
   
