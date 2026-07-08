@@ -22,7 +22,18 @@ package risc_pkg;
   // ALU Operation Selector
   // --------------------------------------------------------
 
-
+  typedef enum logic [3:0]{
+    ADD,
+    SUB,
+    SLL,
+    SLT,
+    SLTU,
+    XOR,
+    SRL,
+    SRA,
+    OR,
+    AND
+  }alu_op_t;
 
 
 
