@@ -53,10 +53,14 @@ package risc_pkg;
   // --------------------------------------------------------
   // B-Type Instructions (Funct3)
   // --------------------------------------------------------
-
-
-
-
+  typedef enum logic [2:0] {
+    BEQ = 3'h0,
+    BNE = 3'h1,
+    BLT = 3'h4,
+    BGE = 3'h5,
+    BLTU = 3'h6,
+    BGEU = 3'h7
+  } b_type_instr_t;
 
   // --------------------------------------------------------
   // R-Type Instructions (Funct7[5], Funct3)
